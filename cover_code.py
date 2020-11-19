@@ -21,6 +21,13 @@ FONT_SIZE = 12
 UNIT = 'mm'
 FORMAT = 'letter'
 
+# globals
+applicant_name = None
+company_name = None
+company_position = None
+company_location = None
+date = None
+
 ###########################################################
 ###########################################################
 

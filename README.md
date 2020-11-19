@@ -62,10 +62,10 @@ Check the [Screenshots](#Screenshots) for a visual demonstration.
 # Screenshots 
 * When the script is run in terminal, you will see the following output, in which you fill in your information:
 
-![Alt text](./Screenshots/Screenshot_1.png)
+![terminal view](./Screenshots/Screenshot_1.png)
 
 * The corresponding output for the above input information:
 
-![Alt text](./Screenshots/Screenshot_2.png)
+![pdf output](./Screenshots/Screenshot_2.png)
 
-**_It is that simple!_**
+* **_It is that simple!_**
