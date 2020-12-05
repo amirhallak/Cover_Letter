@@ -33,6 +33,8 @@ date = None
 
 # retrieving application information 
 def company_info():
+    '''
+    '''
 
     global applicant_name, date
     global company_name, company_position, company_location
