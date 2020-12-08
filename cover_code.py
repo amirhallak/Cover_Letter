@@ -34,6 +34,7 @@ date = None
 # retrieving application information 
 def company_info():
     '''
+    Fills the global variables with the required information.
     '''
 
     global applicant_name, date
@@ -50,6 +51,15 @@ def company_info():
 
 # header specifications in the pdf
 def pdf_header(document):
+    '''
+    Writes the header of the document. 
+
+    Parameters:
+    -----------
+    document: str
+        The initialized document within the main function. 
+
+    '''
 
     # header text
     header_text = f'{date}\n{company_name}\n{company_location}\nPosition: {company_position}'
@@ -60,7 +70,15 @@ def pdf_header(document):
     
 # body specifications and body text import
 def pdf_body(document):
+    '''
+    Writes the body of the document. 
 
+    Parameters:
+    -----------
+    document: str
+        The initialized document within the main function. 
+
+    '''
     # cover text
     with open(TEXT_FILE, 'rb') as F1:
         body_text = F1.read().decode('latin1').format(company_position, company_name)
@@ -72,6 +90,14 @@ def pdf_body(document):
 
 # footer specifications in the pdf
 def pdf_footer(document):
+    '''
+    Writes the footer of the document. 
+
+    Parameters:
+    -----------
+    document: str
+        The initialized document within the main function. 
+    '''
 
     # footer text
     footer_text = f'Thank you,\n{applicant_name}'
@@ -87,7 +113,7 @@ def pdf_footer(document):
 # writing pdf
 def pdf_writer():
     '''
-    The actual PDF writer starts.
+    The actual PDF writer starts and exports.
     '''
     
     # setting up page settings
