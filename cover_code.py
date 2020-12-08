@@ -66,7 +66,7 @@ def pdf_header(document):
 
     # writing header information
     document.set_font(FONT, 'B', FONT_SIZE)
-    document.multi_cell(0,5, header_text, ln=2)
+    document.multi_cell(0,5, header_text)
     
 # body specifications and body text import
 def pdf_body(document):
@@ -86,7 +86,7 @@ def pdf_body(document):
     # writing body
     document.ln(12.5)
     document.set_font(FONT, '', FONT_SIZE)
-    document.multi_cell(0,5, body_text, ln=2)
+    document.multi_cell(0,5, body_text)
 
 # footer specifications in the pdf
 def pdf_footer(document):
